@@ -30,11 +30,7 @@ public class Student implements Serializable {
 	@JsonIgnoreProperties(value = { "student", "hibernateLazyInitializer", "handler" }, allowSetters = true)
 	private Person person;
 
-	@NotNull(message = "Seleccione una carrera")
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "idCareer")
-	@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
-	private Career career;
+
 
 	public Long getId() {
 		return id;
@@ -52,13 +48,6 @@ public class Student implements Serializable {
 		this.person = person;
 	}
 
-	public Career getCareer() {
-		return career;
-	}
-
-	public void setCareer(Career career) {
-		this.career = career;
-	}
 
 	/**
 	 * 

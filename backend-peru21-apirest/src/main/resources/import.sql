@@ -72,9 +72,9 @@ insert into persons(first_name,last_name,birthday,dni,address,phone,email,id_civ
 
 /* Students */
 
-insert into students(id_career, id_person) values(1,3);
-insert into students(id_career, id_person) values(8,6);
-insert into students(id_career, id_person) values(2,1);
+insert into students(id_person) values(3);
+insert into students(id_person) values(6);
+insert into students(id_person) values(1);
 
 /* USUARIOS Y ROLES */
 
